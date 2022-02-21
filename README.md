@@ -5,6 +5,7 @@
 ### In this implementation we develop a node in a network where communication between different nodes is possible. The nodes do not necessarily communicate directly with each other, and they can communicate through other nodes.
 
 The following actions can be performed:
+
 ⚪ setid,id - setting the id of the current node.
 
 ⚪ connect,ip:port - connecting the current node to the node that meets the inputed IP and Port.
