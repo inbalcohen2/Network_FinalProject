@@ -18,9 +18,13 @@ The following actions can be performed:
 
 The methods implemented in this class:
 std_setid(#param) - determines the current node ID based on the input.
-std_connect(#param) - opening a new socket and sending a request to connect to the IP and the port received at the input. (necessary condition - ID is defined in both nodes).
-std_send(#param) - sending a message of a certain length to the node given in the input. If the path to the node unknown, a DISCOVER operation is activated (as explained below) before sending.
-std_route(#param) - prints the best route to the node given in the input. If the path to the node is not known, the DISCOVER operation is activated (as explained below) before printing the route.
+
+std_connect(#param) - opening a new socket and sending a request to connect to the IP and the port received at the input. 
+(necessary condition - ID is defined in both nodes).
+std_send(#param) - sending a message of a certain length to the node given in the input.
+ If the path to the node unknown, a DISCOVER operation is activated (as explained below) before sending.
+std_route(#param) - prints the best route to the node given in the input. If the path to the node is not known,
+ the DISCOVER operation is activated (as explained below) before printing the route.
 std_peers(#param) - prints the neighboring nodes (directly connected).
 gotmsg(#param) - using a switch case when receiving a message to redirect to corresponding incoming message function.
 input_ack(#param) - handles the case of incoming ack message (depending on the source message on which the ACK message was returned).
